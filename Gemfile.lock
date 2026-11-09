@@ -123,7 +123,7 @@ GEM
       faraday_middleware (~> 1.0, >= 1.0.0.rc1)
       net-http-persistent (~> 4.0)
       nokogiri (~> 1, >= 1.10.8)
-    base64 (0.2.0)
+    base64 (0.3.0)
     bcp47_spec (0.2.1)
     bcrypt (3.1.20)
     better_errors (2.10.1)
@@ -308,7 +308,8 @@ GEM
       rubocop (>= 1.0)
       sysexits (~> 1.1)
     hashdiff (1.1.0)
-    hashie (5.0.0)
+    hashie (5.2.0)
+      logger
     hcaptcha (7.1.0)
       json
     highline (3.0.1)
@@ -462,10 +463,11 @@ GEM
       statsd-ruby (~> 1.4, >= 1.4.0)
     oj (3.16.4)
       bigdecimal (>= 3.0)
-    omniauth (2.1.2)
-      hashie (>= 3.4.6)
-      rack (>= 2.2.3)
-      rack-protection
+    omniauth (2.2.0)
+      hashie (>= 3.5.2)
+      logger
+      rack (>= 2.2.8)
+      rack-protection (>= 2.2.0)
     omniauth-cas (3.0.0)
       addressable (~> 2.8)
       nokogiri (~> 1.12)
@@ -980,7 +982,7 @@ DEPENDENCIES
   nokogiri (~> 1.15)
   nsa
   oj (~> 3.14)
-  omniauth (~> 2.0)
+  omniauth (~> 2.2)
   omniauth-cas (~> 3.0.0.beta.1)
   omniauth-rails_csrf_protection (~> 1.0)
   omniauth-saml (~> 2.0)
